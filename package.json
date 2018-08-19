@@ -1,7 +1,21 @@
 {
   "name": "angular5-tictactoe",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A Tic-Tac-Toe game made with Angular 5 and Bootstrap 4",
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/marciogurka/angular5-tictactoe.git"
+  },
+  "keywords": [
+  "angular5",
+  "boostrap4"
+  ],
+  "author": "Márcio José Gurka Júnior (marciogurkajr@gmail.com)",
   "license": "MIT",
+  "bugs": {
+  "url": "https://github.com/marciogurka/angular5-tictactoe/issues"
+  },
+  "homepage": "https://github.com/marciogurka/angular5-tictactoe#readme",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

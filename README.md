@@ -1,6 +1,6 @@
 # Angular5Tictactoe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+A Tic-Tac-Toe game made with Angular 5 and Bootstrap 4 generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
 
