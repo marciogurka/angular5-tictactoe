@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  min-height: 100%;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.container-fluid > .row {
+  height: 100%;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-link > fa-icon {
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+body {
+  padding-top: 0;
+}
+
+footer, footer > .navbar-brand {
+  font-size: 12px;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  margin-top: 15px;
+  position: absolute !important;
+  right: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+  padding-left: 5px;
+}
+
+.heart > svg > path {
+  fill: #de1111;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    padding-top: 70px;
+  }
+}
