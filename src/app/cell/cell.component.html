@@ -1,0 +1,5 @@
+<button type="button" class="btn btn-outline"
+  [ngClass]="{'btn-outline-primary': state && state.colorClass === 'primary', 'btn-outline-secondary': state && state.colorClass === 'secondary'}">
+  <span *ngIf="state && state.sign === 'faCircle'"><fa-icon [icon]="faCircleNotch" class="player-option"></fa-icon></span>
+  <span *ngIf="state && state.sign === 'faTimes'"><fa-icon [icon]="faTimes" class="player-option"></fa-icon></span>
+</button>

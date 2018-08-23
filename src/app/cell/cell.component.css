@@ -1,0 +1,29 @@
+.btn {
+  border: none;
+  border-radius: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+:host {
+  padding-top: 25%;
+}
+
+.player-option {
+   font-size: 5vw;
+}
+
+@media screen and (max-width: 576px) {
+  .player-option {
+    font-size: 12vw;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .player-option {
+    font-size: 10vw;
+  }
+}
