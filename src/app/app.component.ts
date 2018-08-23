@@ -23,12 +23,6 @@ import {
           style({transform: 'translateY(100%)', opacity: 0}),
           animate('500ms', style({transform: 'translateY(0)', 'opacity': 1}))
         ]
-      ),
-      transition(
-        ':leave', [
-          style({transform: 'translateX(0)', 'opacity': 1}),
-          animate('500ms', style({transform: 'translateY(100%)', 'opacity': 0}),
-        ]
       )]
     )
   ]
@@ -38,6 +32,8 @@ export class AppComponent {
   title = 'Angular 5 tic-tac-toe';
   faCode = faCode;
   faHeart = faHeart;
+  players: Array<Player>;
+  gameReady: boolean;
 
   // check if the board is going to be displayed
   playerSubmitted() {

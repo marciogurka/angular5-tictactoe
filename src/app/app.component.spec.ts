@@ -2,7 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppComponent } from './app.component';
 import { PlayerComponent } from './player/player.component';
@@ -25,7 +25,8 @@ describe('AppComponent', () => {
       imports: [
         FontAwesomeModule,
         FormsModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        ReactiveFormsModule
       ],
       schemas: [ NO_ERRORS_SCHEMA ]
     }).compileComponents();
