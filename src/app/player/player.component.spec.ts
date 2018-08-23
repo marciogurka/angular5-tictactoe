@@ -74,7 +74,7 @@ describe('PlayerComponent', () => {
         expect(component.playerSubmitted.emit).toHaveBeenCalled();
       });
     });
-    describe('And the player is ready', () => {
+    describe('and the player is ready', () => {
       it('should have the name input readonly', () => {
         const name = component.playerForm.controls['name'];
         name.setValue('player');
