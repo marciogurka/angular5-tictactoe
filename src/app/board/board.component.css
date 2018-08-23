@@ -1,0 +1,78 @@
+.board-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  :host {
+    margin-bottom: 70px;
+  }
+}
+
+app-cell {
+  border: 2px solid #222;
+}
+
+.board-row:first-of-type > app-cell:first-of-type {
+  border-bottom: solid 3px #222;
+  border-left: transparent;
+  border-right: solid 3px #222;
+  border-top: transparent;
+}
+
+.board-row:nth-of-type(2) > app-cell:first-of-type {
+  border-bottom: solid 3px #222;
+  border-left: transparent;
+  border-right: solid 3px #222;
+  border-top: solid 3px #222;
+}
+
+.board-row:nth-of-type(3) > app-cell:first-of-type {
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: solid 3px #222;
+  border-top: solid 3px #222;
+}
+
+.board-row:first-of-type > app-cell:nth-of-type(2) {
+  border-bottom: solid 3px #222;
+  border-left: solid 3px #222;
+  border-right: solid 3px #222;
+  border-top: transparent;
+}
+
+.board-row:nth-of-type(2) > app-cell:nth-of-type(2) {
+  border-bottom: solid 3px #222;
+  border-left: solid 3px #222;
+  border-right: solid 3px #222;
+  border-top: solid 3px #222;
+}
+
+.board-row:nth-of-type(3) > app-cell:nth-of-type(2) {
+  border-bottom: transparent;
+  border-left: solid 3px #222;
+  border-right: solid 3px #222;
+  border-top: solid 3px #222;
+}
+
+.board-row:first-of-type > app-cell:nth-of-type(3) {
+  border-bottom: solid 3px #222;
+  border-left: solid 3px #222;
+  border-right: transparent;
+  border-top: transparent;
+}
+
+.board-row:nth-of-type(2) > app-cell:nth-of-type(3) {
+  border-bottom: solid 3px #222;
+  border-left: solid 3px #222;
+  border-right: transparent;
+  border-top: solid 3px #222;
+}
+
+.board-row:nth-of-type(3) > app-cell:nth-of-type(3)  {
+  border-bottom: transparent;
+  border-left: solid 3px #222;
+  border-right: transparent;
+  border-top: solid 3px #222;
+}
