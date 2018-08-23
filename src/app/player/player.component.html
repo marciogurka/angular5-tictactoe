@@ -1,0 +1,38 @@
+<div class="card" [ngClass]="{'border-primary': player.colorClass === 'primary', 'border-secondary': player.colorClass === 'secondary'}">
+  <img class="card-img-top" [src]="player.icon" alt="Player image" [ngClass]="{'bg-primary': player.colorClass === 'primary', 'bg-secondary': player.colorClass === 'secondary'}">
+  <div class="card-body">
+    <form (ngSubmit)="onPlayerSubmit()" [formGroup]="playerForm">
+      <div class="row" [ngClass]="{'form-group': !player.isReady}">
+        <label for="name" class="col-sm-4 col-form-label col" *ngIf="!player.isReady">Name:</label>
+        <div [ngClass]="{'col-sm-8': !player.isReady, 'col-sm-12': player.isReady}">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="player.name"
+            placeholder="Put your name here"
+            formControlName="name"
+            [ngClass]="{'form-control-plaintext text-center player-ready': player.isReady, 'form-control': !player.isReady}"
+            [readonly]="player.isReady">
+        </div>
+      </div>
+      <div class="row"  [ngClass]="{'form-group': !player.isReady}">
+        <label for="wins" class="col-sm-9 col-form-label col-4">Wins:</label>
+        <div class="col-sm-3 col-8">
+          <input
+            type="text"
+
+            class="form-control-plaintext"
+            [(ngModel)]="player.wins"
+            name="wins"
+            formControlName="wins"
+            id="wins">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-{{player.colorClass}} btn-block btn-lg submit-btn" *ngIf="!player.isReady" [disabled]="playerForm.invalid">Start Game</button>
+    </form>
+    <div *ngIf="player.isReady && !gameReady" class="alert alert-{{player.colorClass}} text-center" role="alert">
+      Waiting for the other player
+    </div>
+  </div>
+</div>

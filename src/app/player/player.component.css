@@ -1,0 +1,29 @@
+:host {
+  max-height: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  :host:last-of-type {
+    margin-bottom: 70px;
+  }
+
+  :host {
+    max-height: fit-content;
+  }
+}
+
+.alert {
+  margin: 0;
+}
+
+.card-img-top {
+  max-height: 170px;
+  padding: 10px;
+}
+
+.player-ready {
+  font-style: italic;
+  font-weight: bold;
+}
