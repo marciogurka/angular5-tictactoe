@@ -1,0 +1,890 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Angular Tic Tac Toe</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Angular Tic Tac Toe</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">Angular Tic Tac Toe</a>
+        </li>
+
+        <li class="divider"></li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#xs-modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="xs-modules-links"
+                >
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-components-links-module-AppModule-1821e2591efb363a32da9cb55927d3d2"
+                                    >
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-components-links-module-AppModule-1821e2591efb363a32da9cb55927d3d2"
+                                    >
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/BoardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BoardComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/BoardStatusBarComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BoardStatusBarComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/CellComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">CellComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/NewGameBtnComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NewGameBtnComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/PlayerComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">PlayerComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-classes-links"
+                >
+                <span class="fa fa-fw fa-file-code-o"></span>
+                <span>Classes</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-classes-links"
+                >
+                    <li class="link">
+                        <a href="classes/Player.html" data-type="entity-link">Player</a>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-miscellaneous-links"
+                >
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-miscellaneous-links"
+                >
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+
+    </ul>
+
+</nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">Angular Tic Tac Toe</a>
+        </li>
+
+        <li class="divider"></li>
+
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="modules-links"
+>
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#components-links-module-AppModule-1821e2591efb363a32da9cb55927d3d2"
+>
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="components-links-module-AppModule-1821e2591efb363a32da9cb55927d3d2"
+>
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/BoardComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BoardComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/BoardStatusBarComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BoardStatusBarComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/CellComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">CellComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/NewGameBtnComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NewGameBtnComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/PlayerComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">PlayerComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#classes-links"
+>
+                <span class="fa fa-fw fa-file-code-o"></span>
+                <span>Classes</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="classes-links"
+>
+                    <li class="link">
+                        <a href="classes/Player.html" data-type="entity-link">Player</a>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#miscellaneous-links"
+>
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="miscellaneous-links"
+>
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+
+    </ul>
+
+</nav>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PlayerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/player/player.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-player</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>player.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./player.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#playerForm">playerForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#onPlayerSubmit">onPlayerSubmit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#gameReady">gameReady</a>
+                            </li>
+                            <li>
+                                <a href="#player">player</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#playerSubmitted">playerSubmitted</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/player/player.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="gameReady"></a>
+                        <code>gameReady</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Inform if the game is ready or not</p>
+</div>
+                            <p>
+                            <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/player/player.component.ts:29</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="player"></a>
+                        <code>player</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Player Class</p>
+</div>
+                            <p>
+                            <em>Type:</em>    <code><a href="../classes/Player.html" target="_self" >Player</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/player/player.component.ts:24</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="playerSubmitted"></a>
+                        <code>playerSubmitted</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event emmited when the user is ready</p>
+</div>
+                        <em><code>$event</code> type:</em>    <code>EventEmitter&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/player/player.component.ts:19</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onPlayerSubmit"></a>
+                        <span class="name">
+                            <b>
+                            onPlayerSubmit
+                            </b>
+                            <a href="#onPlayerSubmit"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>onPlayerSubmit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/player/player.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Update the player <code>isReady</code> property and emit the <code>playerSubmitted</code> event</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="playerForm"></a>
+                        <span class="name">
+                            <b>
+                            playerForm
+                            </b>
+                            <a href="#playerForm"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>playerForm:     <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/player/player.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Form of the Player info</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input, Output, EventEmitter } from &#x27;@angular/core&#x27;;
+import { Player } from &#x27;./player.model&#x27;;
+import { FormGroup, FormBuilder, Validators } from &#x27;@angular/forms&#x27;;
+
+@Component({
+  selector: &#x27;app-player&#x27;,
+  templateUrl: &#x27;./player.component.html&#x27;,
+  styleUrls: [&#x27;./player.component.css&#x27;]
+})
+
+/**
+ * Player Component class
+ */
+export class PlayerComponent implements OnInit {
+
+  /**
+   * Event emmited when the user is ready
+   */
+  @Output() playerSubmitted: EventEmitter&lt;string&gt; &#x3D; new EventEmitter();
+
+  /**
+   * Player Class
+   */
+  @Input() player: Player;
+
+  /**
+   * Inform if the game is ready or not
+   */
+  @Input() gameReady: boolean;
+
+  /**
+   * Form of the Player info
+   */
+  playerForm: FormGroup;
+
+  /**
+   * Update the player &#x60;isReady&#x60; property and emit the &#x60;playerSubmitted&#x60; event
+   *
+   * @returns {}
+   */
+  onPlayerSubmit() {
+    if (this.playerForm.valid) {
+      this.player.isReady &#x3D; true;
+      this.playerSubmitted.emit();
+    }
+  }
+
+  constructor(private fb: FormBuilder) {
+  }
+
+  /**
+   * Initialize the form properly
+   *
+   * @returns {}
+   */
+  ngOnInit() {
+    this.playerForm &#x3D; this.fb.group({
+      name: [&#x27;&#x27;, [
+        Validators.required,
+      ]],
+      wins: [0, []],
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;card&quot; [ngClass]&#x3D;&quot;{&#x27;border-primary&#x27;: player.colorClass &#x3D;&#x3D;&#x3D; &#x27;primary&#x27;, &#x27;border-secondary&#x27;: player.colorClass &#x3D;&#x3D;&#x3D; &#x27;secondary&#x27;}&quot;&gt;
+  &lt;img class&#x3D;&quot;card-img-top&quot; [src]&#x3D;&quot;player.icon&quot; alt&#x3D;&quot;Player image&quot; [ngClass]&#x3D;&quot;{&#x27;bg-primary&#x27;: player.colorClass &#x3D;&#x3D;&#x3D; &#x27;primary&#x27;, &#x27;bg-secondary&#x27;: player.colorClass &#x3D;&#x3D;&#x3D; &#x27;secondary&#x27;}&quot;&gt;
+  &lt;div class&#x3D;&quot;card-body&quot;&gt;
+    &lt;form (ngSubmit)&#x3D;&quot;onPlayerSubmit()&quot; [formGroup]&#x3D;&quot;playerForm&quot;&gt;
+      &lt;div class&#x3D;&quot;row&quot; [ngClass]&#x3D;&quot;{&#x27;form-group&#x27;: !player.isReady}&quot;&gt;
+        &lt;label for&#x3D;&quot;name&quot; class&#x3D;&quot;col-sm-4 col-form-label col&quot; *ngIf&#x3D;&quot;!player.isReady&quot;&gt;Name:&lt;/label&gt;
+        &lt;div [ngClass]&#x3D;&quot;{&#x27;col-sm-8&#x27;: !player.isReady, &#x27;col-sm-12&#x27;: player.isReady}&quot;&gt;
+          &lt;input
+            type&#x3D;&quot;text&quot;
+            id&#x3D;&quot;name&quot;
+            name&#x3D;&quot;name&quot;
+            [(ngModel)]&#x3D;&quot;player.name&quot;
+            placeholder&#x3D;&quot;Put your name here&quot;
+            formControlName&#x3D;&quot;name&quot;
+            [ngClass]&#x3D;&quot;{&#x27;form-control-plaintext text-center player-ready&#x27;: player.isReady, &#x27;form-control&#x27;: !player.isReady}&quot;
+            [readonly]&#x3D;&quot;player.isReady&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;row&quot;  [ngClass]&#x3D;&quot;{&#x27;form-group&#x27;: !player.isReady}&quot;&gt;
+        &lt;label for&#x3D;&quot;wins&quot; class&#x3D;&quot;col-sm-9 col-form-label col-4&quot;&gt;Wins:&lt;/label&gt;
+        &lt;div class&#x3D;&quot;col-sm-3 col-8&quot;&gt;
+          &lt;input
+            type&#x3D;&quot;text&quot;
+            readonly
+            class&#x3D;&quot;form-control-plaintext&quot;
+            [(ngModel)]&#x3D;&quot;player.wins&quot;
+            name&#x3D;&quot;wins&quot;
+            formControlName&#x3D;&quot;wins&quot;
+            id&#x3D;&quot;wins&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-{{player.colorClass}} btn-block btn-lg submit-btn&quot; *ngIf&#x3D;&quot;!player.isReady&quot; [disabled]&#x3D;&quot;playerForm.invalid&quot;&gt;Start Game&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;div *ngIf&#x3D;&quot;player.isReady &amp;&amp; !gameReady&quot; class&#x3D;&quot;alert alert-{{player.colorClass}} text-center&quot; role&#x3D;&quot;alert&quot;&gt;
+      Waiting for the other player
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="card" [ngClass]="{\'border-primary\': player.colorClass === \'primary\', \'border-secondary\': player.colorClass === \'secondary\'}">  <img class="card-img-top" [src]="player.icon" alt="Player image" [ngClass]="{\'bg-primary\': player.colorClass === \'primary\', \'bg-secondary\': player.colorClass === \'secondary\'}">  <div class="card-body">    <form (ngSubmit)="onPlayerSubmit()" [formGroup]="playerForm">      <div class="row" [ngClass]="{\'form-group\': !player.isReady}">        <label for="name" class="col-sm-4 col-form-label col" *ngIf="!player.isReady">Name:</label>        <div [ngClass]="{\'col-sm-8\': !player.isReady, \'col-sm-12\': player.isReady}">          <input            type="text"            id="name"            name="name"            [(ngModel)]="player.name"            placeholder="Put your name here"            formControlName="name"            [ngClass]="{\'form-control-plaintext text-center player-ready\': player.isReady, \'form-control\': !player.isReady}"            [readonly]="player.isReady">        </div>      </div>      <div class="row"  [ngClass]="{\'form-group\': !player.isReady}">        <label for="wins" class="col-sm-9 col-form-label col-4">Wins:</label>        <div class="col-sm-3 col-8">          <input            type="text"            readonly            class="form-control-plaintext"            [(ngModel)]="player.wins"            name="wins"            formControlName="wins"            id="wins">        </div>      </div>      <button type="submit" class="btn btn-{{player.colorClass}} btn-block btn-lg submit-btn" *ngIf="!player.isReady" [disabled]="playerForm.invalid">Start Game</button>    </form>    <div *ngIf="player.isReady && !gameReady" class="alert alert-{{player.colorClass}} text-center" role="alert">      Waiting for the other player    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BoardComponent', 'selector': 'app-board'},{'name': 'BoardStatusBarComponent', 'selector': 'app-board-status-bar'},{'name': 'CellComponent', 'selector': 'app-cell'},{'name': 'NewGameBtnComponent', 'selector': 'app-new-game-btn'},{'name': 'PlayerComponent', 'selector': 'app-player'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'PlayerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+        <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PlayerComponent.html';
+        </script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+
+    </body>
+</html>
