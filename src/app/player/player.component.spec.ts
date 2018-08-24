@@ -31,6 +31,11 @@ describe('PlayerComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  it('should have the `wins` input readonly property', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('input[name="wins"]').getAttribute('readonly')).not.toBeNull();
+  });
+
   describe('Before the game start', () => {
     describe('and the player is not ready', () => {
       it('should have form invalid when empty', () => {
