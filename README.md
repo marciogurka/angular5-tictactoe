@@ -1,6 +1,8 @@
 # angular5-tictactoe
 
-> A Tic-Tac-Toe game made with Angular 5 and Bootstrap 4 generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4. [live demo](https://www.marciogurka.com/angular5-tictactoe/)
+> A Tic-Tac-Toe game made with Angular 5 and Bootstrap 4 generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4. 
+
+>[Live demo](https://www.marciogurka.com/angular5-tictactoe/)
 
 ## Build Setup
 
