@@ -1,0 +1,14 @@
+{
+    "name": "Angular Tic Tac Toe",
+    "output": "./docs",
+    "tsconfig": "./src/tsconfig.app.json",
+    "customFavicon": "./src/favicon.ico",
+    "theme": "material",
+    "disableLifeCycleHooks": true,
+    "disablePrivate": true,
+    "disableProtected": true,
+    "disableInternal": true,
+    "coverageTestThresholdFail": false,
+    "coverageTest": false,
+    "hideGenerator": true
+}

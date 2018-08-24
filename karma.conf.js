@@ -9,6 +9,7 @@ module.exports = function (config) {
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
+      require('karma-htmlfile-reporter'),
       require('karma-coverage-istanbul-reporter'),
       require('@angular/cli/plugins/karma')
     ],
@@ -22,7 +23,17 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
-    reporters: ['progress', 'kjhtml'],
+    reporters: ['progress', 'html', 'kjhtml'],
+    htmlReporter: {
+      outputFile: 'tests/units.html',
+
+      // Optional
+      pageTitle: 'Unit Tests of Angular Tic Tac Toe',
+      subPageTitle: 'Unit Tests reports of the application',
+	  groupSuites: true,
+	  useCompactStyle: true,
+      useLegacyStyle: true
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

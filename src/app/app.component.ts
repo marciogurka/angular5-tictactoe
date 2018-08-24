@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { faCode, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faHeart, faBook } from '@fortawesome/free-solid-svg-icons';
 import { Player } from './player/player.model';
 import {
   trigger,
@@ -28,14 +28,41 @@ import {
   ]
 })
 
+/**
+ * The App Component Class
+ */
 export class AppComponent {
+  /**
+   *   Title of the application
+   */
   title = 'Angular 5 tic-tac-toe';
+  /**
+   *   Code Icon
+   */
   faCode = faCode;
+  /**
+   *   Heart Icon
+   */
   faHeart = faHeart;
+  /**
+   *   Book Icon
+   */
+  faBook = faBook;
+  /**
+   *   Array of players
+   */
   players: Array<Player>;
+  /**
+   *   Inform if the game is ready or not
+   */
   gameReady: boolean;
 
-  // check if the board is going to be displayed
+  /**
+   * Listener to the `playerSubmitted` event and if both players are ready to set the `gameReady` property to true/false
+   *
+   * @returns {}
+   */
+
   playerSubmitted() {
     const readyPlayers = this.players.filter((player: Player) => player.isReady);
     if (readyPlayers.length === 2) {

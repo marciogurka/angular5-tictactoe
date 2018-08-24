@@ -7,9 +7,24 @@ import { Player } from '../player/player.model';
   templateUrl: './cell.component.html',
   styleUrls: ['./cell.component.css']
 })
+
+/**
+ * CellComponent class
+ */
 export class CellComponent {
+  /**
+   * Player that selected the cell
+   */
   @Input() state: Player;
+
+  /**
+   * faTimes icon
+   */
   faTimes = faTimes;
+
+  /**
+   * faCircleNotch icon
+   */
   faCircleNotch = faCircleNotch;
 
   constructor() {

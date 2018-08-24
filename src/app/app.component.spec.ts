@@ -53,7 +53,7 @@ describe('AppComponent', () => {
   it('should render a link to the repo', async(() => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.nav-link').getAttribute('href')).toContain('https://github.com/marciogurka/angular5-tictactoe');
+    expect(compiled.querySelector('.repo-link').getAttribute('href')).toContain('https://github.com/marciogurka/angular5-tictactoe');
   }));
   it('should call `playerSubmitted` method when `playerSubmitted` event is triggered', async(() => {
     fixture.detectChanges();

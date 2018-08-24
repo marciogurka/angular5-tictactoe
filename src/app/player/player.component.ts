@@ -7,12 +7,37 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   templateUrl: './player.component.html',
   styleUrls: ['./player.component.css']
 })
+
+/**
+ * Player Component class
+ */
 export class PlayerComponent implements OnInit {
+
+  /**
+   * Event emmited when the user is ready
+   */
   @Output() playerSubmitted: EventEmitter<string> = new EventEmitter();
+
+  /**
+   * Player Class
+   */
   @Input() player: Player;
+
+  /**
+   * Inform if the game is ready or not
+   */
   @Input() gameReady: boolean;
+
+  /**
+   * Form of the Player info
+   */
   playerForm: FormGroup;
 
+  /**
+   * Update the player `isReady` property and emit the `playerSubmitted` event
+   *
+   * @returns {}
+   */
   onPlayerSubmit() {
     if (this.playerForm.valid) {
       this.player.isReady = true;
@@ -23,6 +48,11 @@ export class PlayerComponent implements OnInit {
   constructor(private fb: FormBuilder) {
   }
 
+  /**
+   * Initialize the form properly
+   *
+   * @returns {}
+   */
   ngOnInit() {
     this.playerForm = this.fb.group({
       name: ['', [
