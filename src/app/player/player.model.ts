@@ -18,4 +18,8 @@ export class Player {
   addWin() {
     this.wins++;
   }
+
+  setSign(sign: string) {
+    this.sign = sign;
+  }
 }

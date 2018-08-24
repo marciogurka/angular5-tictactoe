@@ -109,3 +109,20 @@ describe('PlayerComponent', () => {
     });
   });
 });
+
+describe('Player Model', () => {
+  let player;
+  beforeEach(async(() => {
+    player = new Player('', 0, 'faTimes', 'primary', 'assets/011-game-controller-1.svg');
+  }));
+
+  it('should add a win when `addWin` method is called', () => {
+    player.addWin();
+    expect(player.wins).toBe(1);
+  });
+
+  it('should change sign when `setSign` method is called', () => {
+    player.setSign('signTeste');
+    expect(player.sign).toBe('signTeste');
+  });
+});

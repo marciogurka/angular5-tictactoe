@@ -6,24 +6,28 @@ import { Player } from '../player/player.model';
   templateUrl: './board.component.html',
   styleUrls: ['./board.component.css']
 })
-export class BoardComponent {
+export class BoardComponent implements OnInit {
   @Input() player1: Player;
   @Input() player2: Player;
   winner: Player;
   showNewGameBtn: boolean;
-  player1Turn: boolean;
+  isPlayer1Turn: boolean;
   squares = Array(9).fill(null);
 
   constructor() {
+  }
+
+  ngOnInit() {
     this.startNewGame();
   }
 
   sortTurn() {
-    return Math.round(Math.random()) === 0;
+    this.isPlayer1Turn = Math.round(Math.random()) === 0;
+    this.updateSign(this.isPlayer1Turn);
   }
 
   checkGame(position) {
-    const player = this.player1Turn ? this.player1 : this.player2;
+    const player = this.isPlayer1Turn ? this.player1 : this.player2;
     if (!this.winner && this.squares[position] === null) {
       this.squares[position] = player;
       if (this.isWin()) {
@@ -33,7 +37,7 @@ export class BoardComponent {
       } else if (this.isGameEnded()) {
         this.showNewGameBtn = true;
       }
-      this.player1Turn = !this.player1Turn;
+      this.isPlayer1Turn = !this.isPlayer1Turn;
     }
   }
 
@@ -41,7 +45,19 @@ export class BoardComponent {
     this.squares = Array(9).fill(null);
     this.winner = null;
     this.showNewGameBtn = false;
-    this.player1Turn = this.sortTurn(); // 0 or 1 to sort turn
+    this.sortTurn(); // 0 or 1 to sort turn
+  }
+
+  updateSign(isPlayer1Turn: boolean) {
+    if (this.player1 && this.player1) {
+      if (isPlayer1Turn) {
+        this.player1.setSign('faTimes');
+        this.player2.setSign('faCircle');
+      } else {
+        this.player1.setSign('faCircle');
+        this.player2.setSign('faTimes');
+      }
+    }
   }
 
   isGameEnded() {
@@ -70,7 +86,7 @@ export class BoardComponent {
     } else if (this.winner) {
       return `Well done ${this.winner.name}! You are the winner!`;
     } else {
-      return `Player ${(this.player1Turn) ? this.player1.name : this.player2.name}'s turn`;
+      return `Player ${(this.isPlayer1Turn) ? this.player1.name : this.player2.name}'s turn`;
     }
   }
 

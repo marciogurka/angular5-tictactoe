@@ -145,6 +145,27 @@ describe('BoardComponent', () => {
       expect(component.sortTurn).toHaveBeenCalled();
     });
 
+    it('should call `updateSign` method when `sortTurn` method is called', () => {
+      spyOn(component, 'updateSign');
+      component.sortTurn();
+      fixture.detectChanges();
+      expect(component.updateSign).toHaveBeenCalled();
+    });
+
+    it('should set `x` sign to player1 and `o` to player2 when is player 1 is sorted to start', () => {
+      component.updateSign(true);
+      fixture.detectChanges();
+      expect(component.player1.sign).toBe('faTimes');
+      expect(component.player2.sign).toBe('faCircle');
+    });
+
+    it('should set `o` sign to player1 and `x` to player2 when is player 2 is sorted to start', () => {
+      component.updateSign(false);
+      fixture.detectChanges();
+      expect(component.player1.sign).toBe('faCircle');
+      expect(component.player2.sign).toBe('faTimes');
+    });
+
   });
 
   describe('When the game is ended', () => {
@@ -209,7 +230,7 @@ describe('BoardComponent', () => {
           null, null, null // third row
         ];
         // is player 1 turn
-        component.player1Turn = true;
+        component.isPlayer1Turn = true;
         compiled = fixture.nativeElement;
         // and it clicks on the win option
         const winOption = compiled.querySelectorAll('app-cell')[2];
@@ -249,7 +270,7 @@ describe('BoardComponent', () => {
           null, null, null // third row
         ];
         // is player 2 turn
-        component.player1Turn = false;
+        component.isPlayer1Turn = false;
         compiled = fixture.nativeElement;
         // and it clicks on the win option
         const winOption = compiled.querySelectorAll('app-cell')[5];
